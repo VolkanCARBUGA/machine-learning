@@ -82,7 +82,9 @@ tree_reg.fit(X_train, y_train)
 # Model performansının değerlendirilmesi
 y_pred = tree_reg.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)  # Ortalama kare hata
+print(f"Diabetes Veri Seti ile eğitilen DT regresyon modeli MSE : {mse}")
 rmse = np.sqrt(mse)  # Kök ortalama kare hata
+print(f"Diabetes Veri Seti ile eğitilen DT regresyon modeli RMSE : {rmse}")
 
 #####################################################################
 # BÖLÜM 3: YAPAY VERİ SETİ İLE REGRESYON ÖRNEĞİ
